@@ -58,12 +58,12 @@
 添加`spring-boot-devtools`依赖
 
 ```xml
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-devtools</artifactId>
-                <scope>runtime</scope> <!--加上<scope>runtime</scope>，可以避免在项目打包发布时被引入-->
-                <optional>true</optional> <!--将依赖标记为可选，避免传递给其他模块-->
-            </dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <scope>runtime</scope> <!--加上<scope>runtime</scope>，可以避免在项目打包发布时被引入-->
+    <optional>true</optional> <!--将依赖标记为可选，避免传递给其他模块-->
+</dependency>
 ```
 
 > 因为`spring-boot-devtools`是由spring boot官方提供的，所以不需要指定版本号。
@@ -111,7 +111,7 @@ File->Settings->Advanced Settings
       devtools:
         restart:
           enabled: true  # 设置在该启动类开启热部署
-          additional-paths: src/main/java  # 需要重启的
+          additional-paths: src/main/java  # 需要重启的项目目录
 ```
 
 
